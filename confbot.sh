@@ -1,10 +1,10 @@
 #!/bin/bash
-SCPresq="aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FETS1QRVJVL01HUkJPVC9tYWluL1RlbGVCb3RHZW4vc291cmNlcw=="
+SCPresq="aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0dlbmVyYWRvclZJUC9CT1QvbWFpbi9UZWxlQm90R2VuL3NvdXJjZXM="
 SUB_DOM='base64 -d'
 bar="\e[0;36m=====================================================\e[0m"
 
 CIDdir=/etc/ADM-db && [[ ! -d ${CIDdir} ]] && mkdir ${CIDdir}
-wget -O /etc/ADM-db/BotGen.sh https://raw.githubusercontent.com/ADM-PERU/MGRBOT/main/TeleBotGen/sources/BotGen.sh; chmod 777 /etc/ADM-db/BotGen.sh
+wget -O /etc/ADM-db/BotGen.sh https://raw.githubusercontent.com/GeneradorVIP/BOT/main/TeleBotGen/sources/BotGen.sh; chmod 777 /etc/ADM-db/BotGen.sh
 
 tr=${id}
 check_ip () {
@@ -17,7 +17,7 @@ echo "$IP" > /usr/bin/vendor_code
 function_verify () {
 #echo -e "verificando..."
 # check_ip
- permited=$(curl -sSL "https://raw.githubusercontent.com/ADM-PERU/MGRBOT/main/TeleBotGen/Control/Control-Bot")
+ permited=$(curl -sSL "https://raw.githubusercontent.com/GeneradorVIP/BOT/main/TeleBotGen/Control/Control-Bot")
   [[ $(echo $permited|grep "${IP}") = "" ]] && {
   clear
   echo -e "\n\n\n\e[31m====================================================="
@@ -297,7 +297,7 @@ case $opcion in
 4) ini_res;;
 5) msj_prueba;;
 6) ayuda_fun;;
-7) source <(curl -sSL https://raw.githubusercontent.com/ADM-PERU/MGRBOT/main/bot-permited.sh) ;;
+7) source <(curl -sSL https://raw.githubusercontent.com/GeneradorVIP/BOT/main/bot-permited.sh) ;;
 8) act-bot ;;
 9) lim-bot ;;
 *) bot_gen;;
