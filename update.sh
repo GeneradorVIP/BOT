@@ -2,7 +2,7 @@
 
 dirb="/etc/ADM-db" && [[ ! -d ${dirb} ]] && mkdir ${dirb}
 dirs="${dirb}/sources" && [[ ! -d ${dirs} ]] && mkdir ${dirs}
-SCPresq="aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0FETS1QRVJVL01HUkJPVC9tYWluL1RlbGVCb3RHZW4vc291cmNlcw=="
+SCPresq="aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0dlbmVyYWRvclZJUC9CT1QvbWFpbi9UZWxlQm90R2VuL3NvdXJjZXM="
 SUB_DOM='base64 -d'
 bar="\e[0;36m=====================================================\e[0m"
 
